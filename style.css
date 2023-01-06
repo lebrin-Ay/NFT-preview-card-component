@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit, 'sans-serif';
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-size: 18px;
+}
+
+.card-container {
+    max-width: 20vw;
+    height: 68vh;
+    padding: 1.2rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 9px;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-container:hover .card-img-overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.equ-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: .8rem;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 8px;
+}
+
+.title {
+    width: 13vw;
+    font-size: 1.12rem;
+    margin-bottom: .85rem;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Hover effect on title */
+.title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+/* Hover effect on title */
+
+.description {
+    font-size: .92rem;
+    width: 18vw;
+    margin-bottom: 1.2rem;
+    color: hsl(215, 51%, 70%);
+    opacity: 0.7;
+}
+
+.flex-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .72rem;
+}
+
+.eth-card {
+   color: hsl(178, 100%, 50%)
+}
+
+.eth-card span {
+    font-size: .8rem;
+    position: relative;
+    bottom: .3rem;
+    font-weight: 600;
+    opacity: 0.8;
+    left: .15rem;
+}
+
+.time-card {
+    color: hsl(215, 51%, 70%);
+    opacity: 0.7;
+    height: 3vh;
+}
+
+.time-card span {
+    font-size: .8rem;
+    position: relative;
+    bottom: .3rem;
+    
+}
+
+hr {
+    border: none;
+    color: hsl(215, 32%, 27%);
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin-bottom: .84rem;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jules-img {
+    width: 12%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.author-name p {
+    font-size: .81rem;
+    margin-left: .8rem;
+    color: hsl(0, 0%, 100%);
+    margin-top: .28rem;
+}
+
+/* Hover effect on Author's name */
+.author-name p:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+/* Hover effect on Author's name */
+
+.creation {
+    color: hsl(215, 51%, 70%);
+    opacity: 0.7;
+}
+
+/* footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsla(178, 100%, 50%, 0.5);
+}
+
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+} 
+
+.attribution a:hover {
+    color: hsl(215, 51%, 70%);
+}
+
+/* Mobile Design 375px */
+@media screen and (max-width:375px) {
+    .card-container {
+        max-width: 75vw;
+        height: 70vh;
+    }
+
+    .title {
+        width: 46vw;
+        font-size: 1.12rem;
+        margin-bottom: .85rem;
+    }
+
+    .description {
+        font-size: .92rem;
+        width: 65vw;
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* Responsive Design 1440px */
+@media screen and (min-width: 1440px) {
+    .card-container {
+        height: 59vh;
+    }
+}
+
